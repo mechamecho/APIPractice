@@ -52,7 +52,7 @@ $(document).ready(function(){
                 //if we only put article, then article will be the index number, the first parameter will always be the index
                 //regardless of what you name it
                 $.each(articles, function(index, article){
-                    html+="<li class='list-group-item'><a href='"+article.url+"'>"+article.title+"</li></a><article>"+article.description+"</article>"
+                    html+="<li class='list-group-item'><a href='"+article.url+"'><h4>"+article.title+"</a></h4></li><li class='list-group-item'><article>"+article.description+"</article></li>"
                 })
                 html+="</ul>";
                 $("#articles").html(html);
