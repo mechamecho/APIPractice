@@ -19,7 +19,7 @@ $(document).ready(function() {
                 $.each(items,function(index, item){
                     //var item=items[index]
                     console.log(item.snippet.title);
-                    html+="<li class='list-group-item'><a href='"+item.snippet.url+"'><h4>"+item.snippet.title+"</h4></a></li>";
+                    html+="<li class='list-group-item'><a href='https://www.youtube.com/watch?v="+item.id.videoId+"'><h4>"+item.snippet.title+"</h4></a></li>";
                 })
                 html+="</ul>";
                 $("#results").html(html);
